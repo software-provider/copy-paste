@@ -1,0 +1,14 @@
+import "SettingContainer.idl";
+import "SettingsViewModel.idl";
+// Copyright (c) Microsoft Corporation and Contributors.
+// Licensed under the MIT License.
+
+namespace FastCopy
+{
+    [default_interface]
+    runtimeclass MainPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        MainPage();
+        FastCopy.SettingsViewModel ViewModel{ get; };
+    }
+}

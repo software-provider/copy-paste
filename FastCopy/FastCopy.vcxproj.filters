@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainWindow.xaml">
+      <Filter>Views</Filter>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Filter>Views</Filter>
+    </Page>
+    <Page Include="SegmentedButton.xaml">
+      <Filter>Views\Controls</Filter>
+    </Page>
+    <Page Include="CopyDialog.xaml">
+      <Filter>Views</Filter>
+    </Page>
+    <Page Include="CopyDialogWindow.xaml">
+      <Filter>Views</Filter>
+    </Page>
+    <Page Include="ProgressBarEx.xaml">
+      <Filter>Views\Controls</Filter>
+    </Page>
+    <Page Include="SpeedGraph.xaml">
+      <Filter>Views\Controls</Filter>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="App.idl" />
+    <Midl Include="MainWindow.idl" />
+    <Midl Include="BoolToVisibilityConverter.idl">
+      <Filter>Converter</Filter>
+    </Midl>
+    <Midl Include="NumberToStringConverter.idl">
+      <Filter>Converter</Filter>
+    </Midl>
+    <Midl Include="SettingContainer.idl">
+      <Filter>Views\Controls</Filter>
+    </Midl>
+    <Midl Include="ICopyBase.idl">
+      <Filter>ViewModel</Filter>
+    </Midl>
+    <Midl Include="DoubleToStringConverter.idl">
+      <Filter>Views\Converters</Filter>
+    </Midl>
+    <Midl Include="RobocopyViewModel.idl">
+      <Filter>ViewModel\Robocopy</Filter>
+    </Midl>
+    <Midl Include="FileCompareViewModel.idl">
+      <Filter>ViewModel\Robocopy</Filter>
+    </Midl>
+    <Midl Include="FileInfoViewModel.idl">
+      <Filter>ViewModel\Robocopy</Filter>
+    </Midl>
+    <Midl Include="DateTimeToStringConverter.idl">
+      <Filter>Views\Converters</Filter>
+    </Midl>
+    <Midl Include="ReadableSizeConverter.idl">
+      <Filter>Views\Converters</Filter>
+    </Midl>
+    <Midl Include="SettingsViewModel.idl">
+      <Filter>ViewModel\Settings</Filter>
+    </Midl>
+    <Midl Include="WindowEx.idl">
+      <Filter>Views</Filter>
+    </Midl>
+    <Midl Include="DependentValue.idl">
+      <Filter>Utils</Filter>
+    </Midl>
+    <Midl Include="DataInjector.idl">
+      <Filter>Views\Controls</Filter>
+    </Midl>
+    <Midl Include="TilesControl.idl">
+      <Filter>Views\Controls</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
+    <ClCompile Include="FastCopyCommandParser.cpp">
+      <Filter>ViewModel</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewModelLocator.cpp">
+      <Filter>ViewModel</Filter>
+    </ClCompile>
+    <ClCompile Include="AcrylicHelper.cpp">
+      <Filter>ViewHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandLine.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="UIThreadWrapper.cpp" />
+    <ClCompile Include="ProcessIoCounter.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskFile.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugLogger.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="RobocopyProcess.cpp">
+      <Filter>Utils\Robocopy</Filter>
+    </ClCompile>
+    <ClCompile Include="RobocopyArgs.cpp">
+      <Filter>Utils\Robocopy</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowHelper.cpp">
+      <Filter>ViewHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="Taskbar.cpp">
+      <Filter>Utils\SystemIntegration</Filter>
+    </ClCompile>
+    <ClCompile Include="Notification.cpp">
+      <Filter>Utils\SystemIntegration</Filter>
+    </ClCompile>
+    <ClCompile Include="FileWrapper.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Fallback.cpp">
+      <Filter>Utils\Fallback</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingsChangeListener.cpp">
+      <Filter>ViewModel\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="ShellCopy.cpp">
+      <Filter>Utils\ShellCopy</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimatedValue.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="MutexWrapper.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceHelper.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="FileContextMenu.cpp">
+      <Filter>Views\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="FileTime.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="FastCopyCommandParser.h">
+      <Filter>ViewModel</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewModelLocator.h">
+      <Filter>ViewModel</Filter>
+    </ClInclude>
+    <ClInclude Include="AcrylicHelper.h">
+      <Filter>ViewHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="UIDispatcher.h">
+      <Filter>ViewHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyChangeHelper.hpp">
+      <Filter>ViewHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandLine.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ProcessIOUpdater.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadableUnitConverter.h">
+      <Filter>Converter</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="UIThreadWrapper.h" />
+    <ClInclude Include="ProcessIoCounter.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskFile.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugLogger.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="RobocopyProcess.h">
+      <Filter>Utils\Robocopy</Filter>
+    </ClInclude>
+    <ClInclude Include="RobocopyArgs.h">
+      <Filter>Utils\Robocopy</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowHelper.h">
+      <Filter>ViewHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="Taskbar.h">
+      <Filter>Utils\SystemIntegration</Filter>
+    </ClInclude>
+    <ClInclude Include="Notification.h">
+      <Filter>Utils\SystemIntegration</Filter>
+    </ClInclude>
+    <ClInclude Include="FileWrapper.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Fallback.h">
+      <Filter>Utils\Fallback</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.h">
+      <Filter>ViewModel\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="SettingsChangeListener.h">
+      <Filter>ViewModel\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="ShellCopy.h">
+      <Filter>Utils\ShellCopy</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimatedValue.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="MutexWrapper.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceHelper.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="PathUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="HandleWrapper.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="FileContextMenu.h">
+      <Filter>Views\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="FileTime.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SmallTile.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SmallTile.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SmallTile.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SmallTile.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SmallTile.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\LargeTile.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\LargeTile.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\LargeTile.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\LargeTile.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\LargeTile.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-16.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-32.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-48.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-256.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\BadgeLogo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\BadgeLogo.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\BadgeLogo.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\BadgeLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\BadgeLogo.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\FileDefault.ico">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{7baed4ab-03d0-4aa9-ab8d-8d32b1d049f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ViewModel">
+      <UniqueIdentifier>{7a1f37d9-5bd1-4ddc-a929-9bc2bbb3492f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Converter">
+      <UniqueIdentifier>{58720fcd-fb1c-40af-be6c-e51951d2784e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ViewHelper">
+      <UniqueIdentifier>{82121ef0-1072-4756-886d-3c4730490467}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views">
+      <UniqueIdentifier>{2c099d67-1422-4772-9dab-b66106ba8aac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{2083ba4c-5383-4f27-bfb8-15384dcdd147}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\Controls">
+      <UniqueIdentifier>{aa78688a-d716-4133-b14d-7e21353a28a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Robocopy">
+      <UniqueIdentifier>{d57c3837-c8bd-4a05-a67d-f687fa8c68bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\SystemIntegration">
+      <UniqueIdentifier>{6c418ea5-1724-4cd6-8219-02b54163c2e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Views\Converters">
+      <UniqueIdentifier>{9fc141b0-3d42-4510-9dff-5b85a5c7ccb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Fallback">
+      <UniqueIdentifier>{585c7294-37bb-485f-9f1d-e00173bde03e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ViewModel\Robocopy">
+      <UniqueIdentifier>{a3f4d143-a3b2-4385-9a07-60ca6769cf1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Strings">
+      <UniqueIdentifier>{e03bba09-b9e1-4422-80c5-21b54d995e59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Strings\zh-CN">
+      <UniqueIdentifier>{25622ce8-179a-49ca-898c-a33bdd89aacd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Strings\en-US">
+      <UniqueIdentifier>{3c81bba3-3650-452d-964e-8bdb1a3a1948}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ViewModel\Settings">
+      <UniqueIdentifier>{346f5409-9099-4b78-a713-37925c75a390}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\ShellCopy">
+      <UniqueIdentifier>{73525a02-f480-41b5-8b0a-5863d45cd71f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="FastCopy_TemporaryKey.pfx" />
+    <None Include="..\x64\Release\FastCopy\FastCopyShellExtension.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="Strings\en-US\Resources.resw">
+      <Filter>Strings\en-US</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\zh-CN\Resources.resw">
+      <Filter>Strings\zh-CN</Filter>
+    </PRIResource>
+  </ItemGroup>
+</Project>

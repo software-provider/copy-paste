@@ -1,0 +1,26 @@
+namespace FastCopy
+{
+	enum FinishState
+	{
+		Success,
+		Failed
+	};
+
+	interface ICopyBase requires Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+	{
+		String OperationString{get; };
+		Int32 FinishedItemCount{ get; };
+		Int32 ItemCount{get; };
+		String Source{ get; };
+		String Destination;
+
+		Double Percent{ get; };
+		Windows.Foundation.IAsyncAction Start();
+		void Pause();
+		void Cancel();
+
+		String SpeedText{ get; };
+		Double Speed{ get; };
+		event Windows.Foundation.EventHandler<FinishState> Finished;
+	}
+}

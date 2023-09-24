@@ -1,0 +1,16 @@
+// Copyright (c) Microsoft Corporation and Contributors.
+// Licensed under the MIT License.
+
+namespace FastCopy
+{
+    [default_interface]
+    runtimeclass CopyDialogWindow : Microsoft.UI.Xaml.Window
+    {
+        CopyDialogWindow();
+
+        //Size unit is before scaled to DPI
+        void Resize(Windows.Graphics.SizeInt32 size);
+
+        Windows.Graphics.SizeInt32 ActualSize{get; };
+    }
+}
